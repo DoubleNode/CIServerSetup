@@ -31,3 +31,11 @@
 # Setup Xcode Project on Dev Machine
 - cert
 - sigh
+- sigh -a com.doublenode.dntest -u me@darrenehlers.com --adhoc
+- sigh -a com.doublenode.dntest -u me@darrenehlers.com --development
+- pem -a com.doublenode.dntest -u me@darrenehlers.com
+- pem -a com.doublenode.dntest -u me@darrenehlers.com -- development
+- snapshot init
+- snapshot
+- frameit
+
