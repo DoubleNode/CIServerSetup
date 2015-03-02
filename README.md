@@ -5,8 +5,12 @@
   * https://fastlane.tools/
 
 ## Setup Xcode Dev Machine
+- brew install curl
+- \curl -sSL https://get.rvm.io | bash -s stable
+- rvm install ruby-head
 - Install homebrew [http://brew.sh/]
   - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+- sudo gem install nokogiri
 - Install fastlane
   - https://github.com/KrauseFx/fastlane/blob/master/GUIDE.md
   - sudo gem install fastlane
