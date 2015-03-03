@@ -30,12 +30,18 @@
 
 # Setup Xcode Project on Dev Machine
 - cert
+  - ie: ./cert TA8H33V2E6
+  - ie: ./cert TA8H33V2E6 && ./sigh TA8H33V2E6 -a org.tableproject.phoenix.dev --force
 - sigh
-- sigh -a com.doublenode.dntest -u me@darrenehlers.com --adhoc
-- sigh -a com.doublenode.dntest -u me@darrenehlers.com --development
-- pem -a com.doublenode.dntest -u me@darrenehlers.com
-- pem -a com.doublenode.dntest -u me@darrenehlers.com -- development
+  - ie: ./sigh TA8H33V2E6 -a org.tableproject.phoenix.dev --force
+  - ie: ./cert TA8H33V2E6 && ./sigh TA8H33V2E6 -a org.tableproject.phoenix.dev --force
+  - sigh -a com.doublenode.dntest -u me@darrenehlers.com --adhoc
+  - sigh -a com.doublenode.dntest -u me@darrenehlers.com --development
+- pem
+  - pem -a com.doublenode.dntest -u me@darrenehlers.com
+  - pem -a com.doublenode.dntest -u me@darrenehlers.com -- development
 - snapshot init
 - snapshot
+  - ie: snapshot --snapfile ./"Target Branding"/Phoenix-dev/Snapfile
 - frameit
 
