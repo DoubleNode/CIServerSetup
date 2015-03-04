@@ -14,6 +14,7 @@
 - Install fastlane
   - https://github.com/KrauseFx/fastlane/blob/master/GUIDE.md
   - sudo gem install fastlane
+  - sudo gem install fastlane_env_lanes
   - sudo gem install cert
   - sudo gem install pem
   - sudo gem install sigh
